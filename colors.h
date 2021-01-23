@@ -52,7 +52,9 @@
 #define CL_CYAN		0x0006
 #define CL_PURPLE	0x0007
 #define CL_YELLOW	0x0008
+
 class Colors {
+
 private:
 	HANDLE hConsoleOutput = GetStdHandle(STD_OUTPUT_HANDLE);
 	bool intensity = false;
@@ -101,6 +103,7 @@ public:
 	{
 		CloseHandle(hConsoleOutput);
 	}
+
 };
 #else
 #error "This library for Windows OS"
