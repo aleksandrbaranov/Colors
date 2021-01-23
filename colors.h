@@ -80,7 +80,7 @@ public:
 			case CL_CYAN:	SetConsoleTextAttribute(hConsoleOutput, FOREGROUND_GREEN | FOREGROUND_BLUE | FOREGROUND_INTENSITY);	break;
 			case CL_PURPLE: SetConsoleTextAttribute(hConsoleOutput, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_INTENSITY);	break;
 			case CL_YELLOW: SetConsoleTextAttribute(hConsoleOutput, FOREGROUND_RED | FOREGROUND_GREEN);				break;
-			case CL_WHITE: clear()													break;
+			case CL_WHITE: clear();													break;
 			default:clear();													break;
 			};
 		}else {
