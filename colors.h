@@ -71,28 +71,28 @@ public:
 		if (!intensity) {
 			switch (color)
 			{ 
-			case CL_RED:	SetConsoleTextAttribute(hConsoleOutput, FOREGROUND_RED);											break;
-			case CL_GREEN:	SetConsoleTextAttribute(hConsoleOutput, FOREGROUND_GREEN);											break;
-			case CL_BLUE:	SetConsoleTextAttribute(hConsoleOutput, FOREGROUND_BLUE);											break;
-			case CL_GRAY:	SetConsoleTextAttribute(hConsoleOutput, FOREGROUND_INTENSITY);										break;
+			case CL_RED:	SetConsoleTextAttribute(hConsoleOutput, FOREGROUND_RED);						break;
+			case CL_GREEN:	SetConsoleTextAttribute(hConsoleOutput, FOREGROUND_GREEN);						break;
+			case CL_BLUE:	SetConsoleTextAttribute(hConsoleOutput, FOREGROUND_BLUE);						break;
+			case CL_GRAY:	SetConsoleTextAttribute(hConsoleOutput, FOREGROUND_INTENSITY);						break;
 			case CL_CYAN:	SetConsoleTextAttribute(hConsoleOutput, FOREGROUND_GREEN | FOREGROUND_BLUE | FOREGROUND_INTENSITY);	break;
 			case CL_PURPLE: SetConsoleTextAttribute(hConsoleOutput, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_INTENSITY);	break;
-			case CL_YELLOW: SetConsoleTextAttribute(hConsoleOutput, FOREGROUND_RED | FOREGROUND_GREEN);							break;
-			case CL_WHITE: clear();																								break;
-			default:clear();																									break;
+			case CL_YELLOW: SetConsoleTextAttribute(hConsoleOutput, FOREGROUND_RED | FOREGROUND_GREEN);				break;
+			case CL_WHITE: clear()													break;
+			default:clear();													break;
 			};
 		}else {
 			switch (color)
 			{
-			case CL_RED:	SetConsoleTextAttribute(hConsoleOutput, FOREGROUND_RED | FOREGROUND_INTENSITY);						 break;
-			case CL_GREEN:	SetConsoleTextAttribute(hConsoleOutput, FOREGROUND_GREEN | FOREGROUND_INTENSITY);					 break;
-			case CL_BLUE:	SetConsoleTextAttribute(hConsoleOutput, FOREGROUND_BLUE | FOREGROUND_INTENSITY);					 break;
-			case CL_GRAY:	SetConsoleTextAttribute(hConsoleOutput, FOREGROUND_INTENSITY);										 break;
+			case CL_RED:	SetConsoleTextAttribute(hConsoleOutput, FOREGROUND_RED | FOREGROUND_INTENSITY);				 break;
+			case CL_GREEN:	SetConsoleTextAttribute(hConsoleOutput, FOREGROUND_GREEN | FOREGROUND_INTENSITY);			 break;
+			case CL_BLUE:	SetConsoleTextAttribute(hConsoleOutput, FOREGROUND_BLUE | FOREGROUND_INTENSITY);			 break;
+			case CL_GRAY:	SetConsoleTextAttribute(hConsoleOutput, FOREGROUND_INTENSITY);						 break;
 			case CL_CYAN:	SetConsoleTextAttribute(hConsoleOutput, FOREGROUND_GREEN | FOREGROUND_BLUE | FOREGROUND_INTENSITY);	 break;
 			case CL_PURPLE: SetConsoleTextAttribute(hConsoleOutput, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_INTENSITY);	 break;
-			case CL_YELLOW: SetConsoleTextAttribute(hConsoleOutput, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_INTENSITY);   break;
-			case CL_WHITE: clear();																								 break;
-			default:clear();																									 break;
+			case CL_YELLOW: SetConsoleTextAttribute(hConsoleOutput, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_INTENSITY);       break;
+			case CL_WHITE: clear();													 break;
+			default:clear();													 break;
 			};
 		}
 	}
