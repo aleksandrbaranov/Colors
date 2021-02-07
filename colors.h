@@ -8,40 +8,6 @@
 		set_color  - sets the color that you will pass to it
 		the colors start with CL_ ...
 		set_intensity - enables the color intensity if set to true and disables it if set to false
-
-
-
-	For example:
-	 
-		#include<iostream>
-		#include"colors.h"
-		using namespace std;
-
-		int main() {
-		
-		Colors color;
-		string password;
-		
-		cin >> password;
-		
-		if (password.length() < 6) {
-			color.set_color(CL_RED);
-			cout << "Very short password" << endl;
-		}
-		else if (password.length() == 6) {
-			color.set_color(CL_YELLOW);
-			cout << "Short password" << endl;
-		}else{
-			color.set_color(CL_GREEN);
-			cout << "Normal password" << endl;
-		}
-
-		color.clear();
-		system("pause");
-
-		return 0;
-	}
-	
 */
 #ifdef WIN32
 #define CL_RED		0x0001
