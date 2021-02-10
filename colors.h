@@ -1,10 +1,12 @@
 #pragma once
 #include<Windows.h>
+#include<cstdlib>
 /*
 	Colors - library for changing the color in the console (Powered by Win32API)
 	Class Color:
 	Methods:
 		clear - the usual white color of words in the console
+		clerar_all - clear the entire console
 		set_color  - sets the color that you will pass to it
 		the colors start with CL_ ...
 		set_intensity - enables the color intensity if set to true and disables it if set to false
@@ -33,6 +35,10 @@ public:
 
 	void clear() {
 		SetConsoleTextAttribute(hConsoleOutput, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+	}
+
+	void clear_all() {
+		system("color 7");
 	}
 
 	void set_color(int color) {
