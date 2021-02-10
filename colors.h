@@ -3,7 +3,7 @@
 #include<cstdlib>
 /*
 	Colors - library for changing the color in the console (Powered by Win32API)
-	Class Color:
+	Class Colors:
 	Methods:
 		clear - the usual white color of words in the console
 		clerar_all - clear the entire console
